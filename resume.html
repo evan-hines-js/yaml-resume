@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evan Hines</title>
+<style>
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent: #2d5986;
+    --text: #2c2c2c;
+    --muted: #5a5a5a;
+    --border: #d0d7de;
+    --bg: #ffffff;
+    --tag-bg: #eef2f7;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: "Charter", "Bitstream Charter", "Sitka Text", Cambria, serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 48px 40px;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--text);
+    margin-bottom: 2px;
+}
+
+header .title {
+    font-size: 1.1rem;
+    color: var(--muted);
+    margin-bottom: 10px;
+}
+
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 0;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+.contact-list li + li::before {
+    content: "·";
+    margin: 0 8px;
+    color: var(--border);
+}
+
+/* Sections */
+section {
+    margin-bottom: 24px;
+}
+
+section h2 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    border-bottom: 1.5px solid var(--border);
+    padding-bottom: 4px;
+    margin-bottom: 14px;
+}
+
+/* Summary */
+.summary p {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+/* Entry (experience, education, projects) */
+.entry {
+    margin-bottom: 16px;
+}
+
+.entry:last-child {
+    margin-bottom: 0;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+}
+
+.entry-header .primary {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.entry-header .secondary {
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.entry-header .dates {
+    font-size: 0.88rem;
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+.entry-sub {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-top: 1px;
+}
+
+.entry ul {
+    margin-top: 6px;
+    margin-left: 18px;
+    font-size: 0.93rem;
+}
+
+.entry ul li {
+    margin-bottom: 3px;
+}
+
+/* Skills */
+.skills-group {
+    margin-bottom: 10px;
+}
+
+.skills-group:last-child {
+    margin-bottom: 0;
+}
+
+.skills-group .category {
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-right: 8px;
+}
+
+.tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--text);
+    font-size: 0.82rem;
+    padding: 2px 10px;
+    border-radius: 3px;
+    margin: 2px 4px 2px 0;
+}
+
+/* Certifications */
+.cert {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.93rem;
+    margin-bottom: 4px;
+}
+
+.cert .cert-name {
+    font-weight: 600;
+}
+
+.cert .cert-date {
+    color: var(--muted);
+}
+
+/* Print */
+@media print {
+    html {
+        font-size: 13px;
+    }
+
+    body {
+        padding: 0;
+        max-width: none;
+    }
+
+    a {
+        color: var(--text);
+    }
+
+    section {
+        break-inside: avoid;
+    }
+
+    .entry {
+        break-inside: avoid;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Evan Hines</h1>
+<div class="title">Platform Engineer</div>
+<ul class="contact-list">
+<li><a href="mailto:evhiness@gmail.com">evhiness@gmail.com</a></li>
+<li>947-229-8214</li>
+<li>Livonia, United States</li>
+<li><a href="https://github.com/evan-hines-js">github.com/evan-hines-js</a></li>
+</ul>
+</header>
+<section class="summary">
+<h2>Summary</h2>
+<p>Platform engineer and SRE with 8+ years building and operating infrastructure at scale. Built a Kubernetes multi-cluster operator in Rust from scratch. Track record of cutting costs, eliminating toil, and shipping tooling that engineers actually use. Double B.S. in Math and CS from Wayne State.</p>
+</section>
+<section>
+<h2>Experience</h2>
+<div class="entry">
+<div class="entry-header">
+<span class="primary">Hawk Consulting Group, Inc.</span>
+<span class="dates">Jan 2025 - Present</span>
+</div>
+<div class="entry-sub">Platform Engineer</div>
+<ul>
+<li>Migrated Kubernetes cluster provisioning from ad-hoc Bash scripts to Terraform and Rancher on OpenStack, cutting deploy time and eliminating manual steps</li>
+<li>Hardened platform security for PHI-regulated workloads, closing vulnerabilities identified in audit findings</li>
+<li>Built CI/CD automation for container image builds and multi-environment promotion</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header">
+<span class="primary">Genoa Employment Solutions</span>
+<span class="dates">Apr 2024 - Dec 2024</span>
+</div>
+<div class="entry-sub">Platform Engineer</div>
+<ul>
+<li>Owned the internal developer platform for a major dental insurer, supporting 100+ engineers</li>
+<li>Automated infrastructure provisioning and configuration management, reducing environment setup from days to hours</li>
+<li>Drove platform upgrades with staged rollouts, zero-downtime migrations, and post-deploy validation</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header">
+<span class="primary">AppOmni</span>
+<span class="dates">Aug 2023 - Apr 2024</span>
+</div>
+<div class="entry-sub">Senior Site Reliability Engineer</div>
+<ul>
+<li>Built custom auto-scaler that reduced task wait time by 60% and cut queueing-related pages by 70%</li>
+<li>Redesigned database indexing strategy, reducing query latency by 80% and database load by 40%</li>
+<li>Cut infrastructure spend by 20% through SQL and compute right-sizing across the GCP stack</li>
+<li>Implemented observability infrastructure and incident response process for the engineering org</li>
+<li>Wrote automated DNS manager for global multi-region stack</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header">
+<span class="primary">Firebolt</span>
+<span class="dates">Jan 2022 - Jul 2023</span>
+</div>
+<div class="entry-sub">Site Reliability Engineer - Cloud Platform</div>
+<ul>
+<li>Built internal incident management tooling that reduced pager load across service teams by 30%</li>
+<li>Designed and operated large-scale fault-tolerant distributed systems</li>
+<li>Developed cost models for planned projects to support budgeting and capacity planning</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header">
+<span class="primary">Criteo</span>
+<span class="dates">Nov 2019 - Dec 2021</span>
+</div>
+<div class="entry-sub">Site Reliability Engineer</div>
+<ul>
+<li>Operated 24/7 high-availability Linux environments for low-latency ad-serving infrastructure</li>
+<li>Designed hybrid networking for Kubernetes clusters spanning on-prem and public cloud</li>
+<li>Built reliability tooling for Windows and Linux systems in latency-sensitive environments</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header">
+<span class="primary">X By 2</span>
+<span class="dates">May 2017 - Sep 2019</span>
+</div>
+<div class="entry-sub">Software Consultant</div>
+<ul>
+<li>Built data pipeline solutions in a HIPAA-regulated healthcare environment</li>
+<li>Worked directly with clients to scope and deliver custom software projects</li>
+</ul>
+</div>
+</section>
+<section>
+<h2>Education</h2>
+<div class="entry">
+<div class="entry-header">
+<span class="primary">Wayne State University - Detroit</span>
+</div>
+<div class="entry-sub">B.S. Mathematics · GPA: 3.93</div>
+</div>
+<div class="entry">
+<div class="entry-header">
+<span class="primary">Wayne State University - Detroit</span>
+</div>
+<div class="entry-sub">B.S. Computer Science · GPA: 3.98</div>
+</div>
+</section>
+<section>
+<h2>Skills</h2>
+<div class="skills-group">
+<span class="category">Programming:</span>
+<span class="tag">Rust</span>
+<span class="tag">Elixir</span>
+<span class="tag">Go</span>
+<span class="tag">JavaScript</span>
+<span class="tag">PHP</span>
+</div>
+<div class="skills-group">
+<span class="category">Cloud:</span>
+<span class="tag">Azure</span>
+<span class="tag">GCP</span>
+<span class="tag">OpenStack</span>
+<span class="tag">OVH</span>
+</div>
+<div class="skills-group">
+<span class="category">Infrastructure:</span>
+<span class="tag">Kubernetes</span>
+<span class="tag">Docker</span>
+<span class="tag">Terraform</span>
+<span class="tag">Cilium</span>
+<span class="tag">Istio</span>
+<span class="tag">Helm</span>
+<span class="tag">CI/CD</span>
+<span class="tag">Linux</span>
+</div>
+<div class="skills-group">
+<span class="category">Observability:</span>
+<span class="tag">Prometheus</span>
+<span class="tag">Grafana</span>
+<span class="tag">OpenTelemetry</span>
+</div>
+</section>
+<section>
+<h2>Projects</h2>
+<div class="entry">
+<div class="entry-header">
+<span class="primary"><a href="https://github.com/evan-hines-js/lattice">Lattice</a></span>
+</div>
+<div class="entry-sub">Kubernetes operator for multi-cluster lifecycle management, built in Rust. Provisions clusters via CAPI, pivots them to be fully self-managing, and compiles a single LatticeService CRD into all the resources a service needs.
+</div>
+<ul>
+<li>Self-managing clusters via outbound-only architecture — children survive parent deletion</li>
+<li>Bilateral mesh networking with Cilium L4 + Istio L7 enforcement and Cedar policy authorization</li>
+<li>FIPS-compliant cryptography throughout, secret management via External Secrets Operator</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header">
+<span class="primary"><a href="https://github.com/evan-hines-js/yaml-resume">yaml-resume</a></span>
+</div>
+<div class="entry-sub">Rust CLI that turns a YAML file into a clean, print-ready HTML resume</div>
+</div>
+</section>
+<section>
+<h2>Certifications</h2>
+<div class="cert">
+<span class="cert-name">Certified Kubernetes Administrator</span>
+<span class="cert-date">Jun 2021</span>
+</div>
+<div class="cert">
+<span class="cert-name">Certified Kubernetes Security Specialist</span>
+<span class="cert-date">Jun 2021</span>
+</div>
+<div class="cert">
+<span class="cert-name">Microsoft Certified: Azure Solutions Architect Expert</span>
+<span class="cert-date">Jan 2018</span>
+</div>
+</section>
+<section>
+<h2>Honors &amp; Awards</h2>
+<div class="cert">
+<span class="cert-name">'Golden Gear' (Employee of the Month)</span>
+</div>
+</section>
+</body>
+</html>

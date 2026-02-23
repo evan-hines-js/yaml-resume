@@ -1,0 +1,110 @@
+name: Evan Hines
+title: Platform Engineer
+
+contact:
+  email: evhiness@gmail.com
+  phone: "947-229-8214"
+  location: Livonia, United States
+  github: github.com/evan-hines-js
+
+summary: >
+  Platform engineer and SRE with 8+ years building and operating infrastructure
+  at scale. Built a Kubernetes multi-cluster operator in Rust from scratch.
+  Track record of cutting costs, eliminating toil, and shipping tooling that
+  engineers actually use. Double B.S. in Math and CS from Wayne State.
+
+experience:
+  - company: Hawk Consulting Group, Inc.
+    role: Platform Engineer
+    dates: Jan 2025 - Present
+    highlights:
+      - Migrated Kubernetes cluster provisioning from ad-hoc Bash scripts to Terraform and Rancher on OpenStack, cutting deploy time and eliminating manual steps
+      - Hardened platform security for PHI-regulated workloads, closing vulnerabilities identified in audit findings
+      - Built CI/CD automation for container image builds and multi-environment promotion
+
+  - company: Genoa Employment Solutions
+    role: Platform Engineer
+    dates: Apr 2024 - Dec 2024
+    highlights:
+      - Owned the internal developer platform for a major dental insurer, supporting 100+ engineers
+      - Automated infrastructure provisioning and configuration management, reducing environment setup from days to hours
+      - Drove platform upgrades with staged rollouts, zero-downtime migrations, and post-deploy validation
+
+  - company: AppOmni
+    role: Senior Site Reliability Engineer
+    dates: Aug 2023 - Apr 2024
+    highlights:
+      - Built custom auto-scaler that reduced task wait time by 60% and cut queueing-related pages by 70%
+      - Redesigned database indexing strategy, reducing query latency by 80% and database load by 40%
+      - Cut infrastructure spend by 20% through SQL and compute right-sizing across the GCP stack
+      - Implemented observability infrastructure and incident response process for the engineering org
+      - Wrote automated DNS manager for global multi-region stack
+
+  - company: Firebolt
+    role: Site Reliability Engineer - Cloud Platform
+    dates: Jan 2022 - Jul 2023
+    highlights:
+      - Built internal incident management tooling that reduced pager load across service teams by 30%
+      - Designed and operated large-scale fault-tolerant distributed systems
+      - Developed cost models for planned projects to support budgeting and capacity planning
+
+  - company: Criteo
+    role: Site Reliability Engineer
+    dates: Nov 2019 - Dec 2021
+    highlights:
+      - Operated 24/7 high-availability Linux environments for low-latency ad-serving infrastructure
+      - Designed hybrid networking for Kubernetes clusters spanning on-prem and public cloud
+      - Built reliability tooling for Windows and Linux systems in latency-sensitive environments
+
+  - company: X By 2
+    role: Software Consultant
+    dates: May 2017 - Sep 2019
+    highlights:
+      - Built data pipeline solutions in a HIPAA-regulated healthcare environment
+      - Worked directly with clients to scope and deliver custom software projects
+
+education:
+  - school: Wayne State University - Detroit
+    degree: B.S. Mathematics
+    gpa: "3.93"
+
+  - school: Wayne State University - Detroit
+    degree: B.S. Computer Science
+    gpa: "3.98"
+
+skills:
+  - category: Programming
+    items: [Rust, Elixir, Go, JavaScript, PHP]
+  - category: Cloud
+    items: [Azure, GCP, OpenStack, OVH]
+  - category: Infrastructure
+    items: [Kubernetes, Docker, Terraform, Cilium, Istio, Helm, CI/CD, Linux]
+  - category: Observability
+    items: [Prometheus, Grafana, OpenTelemetry]
+
+projects:
+  - name: Lattice
+    url: https://github.com/evan-hines-js/lattice
+    description: >
+      Kubernetes operator for multi-cluster lifecycle management, built in Rust.
+      Provisions clusters via CAPI, pivots them to be fully self-managing, and
+      compiles a single LatticeService CRD into all the resources a service needs.
+    highlights:
+      - Self-managing clusters via outbound-only architecture — children survive parent deletion
+      - Bilateral mesh networking with Cilium L4 + Istio L7 enforcement and Cedar policy authorization
+      - FIPS-compliant cryptography throughout, secret management via External Secrets Operator
+
+  - name: yaml-resume
+    url: https://github.com/evan-hines-js/yaml-resume
+    description: Rust CLI that turns a YAML file into a clean, print-ready HTML resume
+
+certifications:
+  - name: Certified Kubernetes Administrator
+    date: Jun 2021
+  - name: Certified Kubernetes Security Specialist
+    date: Jun 2021
+  - name: "Microsoft Certified: Azure Solutions Architect Expert"
+    date: Jan 2018
+
+awards:
+  - name: "'Golden Gear' (Employee of the Month)"
