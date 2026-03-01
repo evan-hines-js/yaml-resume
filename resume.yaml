@@ -2,7 +2,7 @@ name: Evan Hines
 title: Platform Engineer
 
 contact:
-  email: evhiness@gmail.com
+  email: evhines@faultdomain.io
   phone: "947-229-8214"
   location: Livonia, United States
   github: github.com/evan-hines-js
@@ -79,6 +79,8 @@ skills:
     items: [Azure, GCP, OpenStack, OVH]
   - category: Infrastructure
     items: [Kubernetes, Docker, Terraform, Cilium, Istio, Helm, CI/CD, Linux]
+  - category: Compliance
+    items: [SOC2, FedRAMP, CMMC, HITRUST]
   - category: Observability
     items: [Prometheus, Grafana, OpenTelemetry]
 
