@@ -1,5 +1,5 @@
 name: Evan Hines
-title: Platform Engineer
+title: Control Plane Engineer
 
 contact:
   email: evhines@faultdomain.io
@@ -8,32 +8,35 @@ contact:
   github: github.com/evan-hines-js
 
 summary: >
-  Platform engineer and SRE with 8+ years building and operating infrastructure
-  at scale. Built a Kubernetes multi-cluster operator in Rust from scratch.
-  Track record of cutting costs, eliminating toil, and shipping tooling that
-  engineers actually use. Double B.S. in Math and CS from Wayne State.
+  Control plane engineer with 8+ years writing the software that runs
+  infrastructure. Built a Kubernetes multi-cluster operator in Rust from scratch.
+  I write orchestration systems, automate toil out of existence, and believe no
+  one should touch infrastructure except through code. Double B.S. in Math and
+  CS from Wayne State.
 
 experience:
   - company: Hawk Consulting Group, Inc. (formerly Genoa Employment Solutions)
-    role: Platform Engineer
+    role: Control Plane Engineer
     dates: Apr 2024 - Present
     highlights:
       - Owned the internal developer platform for a major dental insurer, supporting 100+ engineers across both engagements
       - Migrated Kubernetes cluster provisioning from ad-hoc Bash scripts to Terraform and Rancher on OpenStack, cutting deploy time and eliminating manual steps
-      - Hardened platform security for PHI-regulated workloads, closing vulnerabilities identified in audit findings
+      - Led CMMC compliance initiative, hardening platform security for PHI-regulated workloads and closing vulnerabilities identified in audit findings
       - Automated infrastructure provisioning and configuration management, reducing environment setup from days to hours
       - Built CI/CD automation for container image builds and multi-environment promotion
       - Drove platform upgrades with staged rollouts, zero-downtime migrations, and post-deploy validation
 
   - company: AppOmni
-    role: Senior Site Reliability Engineer
+    role: Senior Software Engineer, Infrastructure
     dates: Aug 2023 - Apr 2024
     highlights:
-      - Built custom auto-scaler that reduced task wait time by 60% and cut queueing-related pages by 70%
+      - Built core cloud orchestration services that ran as part of the product — automated tenant provisioning, DNS record creation, and resource lifecycle management via API
+      - Wrote custom auto-scaler for the compute fleet that reduced task wait time by 60% and cut queueing-related pages by 70%
       - Redesigned database indexing strategy, reducing query latency by 80% and database load by 40%
       - Cut infrastructure spend by 20% through SQL and compute right-sizing across the GCP stack
+      - Built automated DNS manager for global multi-region stack, eliminating manual record management
       - Implemented observability infrastructure and incident response process for the engineering org
-      - Wrote automated DNS manager for global multi-region stack
+      - Operated in a FedRAMP-authorized environment with strict change control and audit requirements
 
   - company: Firebolt
     role: Site Reliability Engineer - Cloud Platform
