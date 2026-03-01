@@ -14,20 +14,15 @@ summary: >
   engineers actually use. Double B.S. in Math and CS from Wayne State.
 
 experience:
-  - company: Hawk Consulting Group, Inc.
+  - company: Hawk Consulting Group, Inc. (formerly Genoa Employment Solutions)
     role: Platform Engineer
-    dates: Jan 2025 - Present
+    dates: Apr 2024 - Present
     highlights:
+      - Owned the internal developer platform for a major dental insurer, supporting 100+ engineers across both engagements
       - Migrated Kubernetes cluster provisioning from ad-hoc Bash scripts to Terraform and Rancher on OpenStack, cutting deploy time and eliminating manual steps
       - Hardened platform security for PHI-regulated workloads, closing vulnerabilities identified in audit findings
-      - Built CI/CD automation for container image builds and multi-environment promotion
-
-  - company: Genoa Employment Solutions
-    role: Platform Engineer
-    dates: Apr 2024 - Dec 2024
-    highlights:
-      - Owned the internal developer platform for a major dental insurer, supporting 100+ engineers
       - Automated infrastructure provisioning and configuration management, reducing environment setup from days to hours
+      - Built CI/CD automation for container image builds and multi-environment promotion
       - Drove platform upgrades with staged rollouts, zero-downtime migrations, and post-deploy validation
 
   - company: AppOmni
