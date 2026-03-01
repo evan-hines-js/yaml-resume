@@ -88,13 +88,14 @@ projects:
   - name: Lattice
     url: https://github.com/evan-hines-js/lattice
     description: >
-      Kubernetes operator for multi-cluster lifecycle management, built in Rust.
-      Provisions clusters via CAPI, pivots them to be fully self-managing, and
-      compiles a single LatticeService CRD into all the resources a service needs.
+      AI infrastructure management platform built in Rust. Orchestrates multi-cluster
+      GPU workloads, distributed training, and model serving on Kubernetes via
+      high-level CRDs that compile to the full infrastructure stack.
     highlights:
-      - Self-managing clusters via outbound-only architecture — children survive parent deletion
-      - Bilateral mesh networking with Cilium L4 + Istio L7 enforcement and Cedar policy authorization
-      - FIPS-compliant cryptography throughout, secret management via External Secrets Operator
+      - Distributed training orchestration with PyTorch DDP/DeepSpeed, NCCL topology auto-configuration, and checkpoint management
+      - Model serving with disaggregated prefill/decode, vGPU scheduling via Volcano, and per-tenant rate limiting
+      - Multi-cluster lifecycle management via CAPI with self-managing clusters and outbound-only architecture
+      - Zero-trust bilateral mesh networking with Cilium L4, Istio L7, and Cedar policy authorization
 
   - name: yaml-resume
     url: https://github.com/evan-hines-js/yaml-resume
