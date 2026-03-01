@@ -12,8 +12,7 @@ summary: >
   infrastructure. Built a Kubernetes multi-cluster operator in Rust from scratch.
   I write orchestration systems, automate toil out of existence, and believe
   infrastructure should be managed by real control planes with reconciliation
-  loops, not static config files. Double B.S. in Math and
-  CS from Wayne State.
+  loops, not static config files.
 
 experience:
   - company: Hawk Consulting Group, Inc. (formerly Genoa Employment Solutions)
